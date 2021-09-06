@@ -13,15 +13,6 @@ healthTargetEligible varchar(3) NOT NULL
 );
 GO
 
-Bulk insert [dbo].[Patient]
-from 'D:\User\Ara\sem 2\databases\db-Ass-1\Assessment\csv-files\Referrer.csv'
- WITH   
-      (  
-         FIELDTERMINATOR =',',  
-         ROWTERMINATOR ='\n',
-		FIRSTROW = 2   
-      );  
-
 --test patient table
 SELECT * FROM [dbo].[Patient]
 
